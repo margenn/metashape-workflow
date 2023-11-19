@@ -289,7 +289,7 @@ def StandardWorkflow(doc, chunk, **kwargs):
         my_compression.tiff_compression = Metashape.ImageCompression.TiffCompressionJPEG
         my_compression.jpeg_quality = 80
         my_compression.tiff_overviews = True
-        chunk.exportRaster(path=filenameTif, image_format=Metashape.ImageFormat.ImageFormatTIFF, raster_transform=Metashape.RasterTransformType.RasterTransformNone, projection=my_projection, save_alpha=False, image_compression=my_compression, white_background=False, save_scheme=False, save_world=False, description="https://dgennari.com.br")
+        chunk.exportRaster(path=filenameTif, image_format=Metashape.ImageFormat.ImageFormatTIFF, raster_transform=Metashape.RasterTransformType.RasterTransformNone, projection=my_projection, save_alpha=False, image_compression=my_compression, white_background=False, save_scheme=False, save_world=False, description="https://seusite.com.br")
         HouveExportacaoTif = True
     else:
         printNovaAtividade("A ORTOFOTO NAO FOI EXPORTADA.\nJA EXISTE UM ARQUIVO %s\nAPAGUE-O E RODE ESTE SCRIPT NOVAMENTE" % filenameTif)
